@@ -3,4 +3,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="choose_currency_string">Choose Currency</string>
+
+    <string-array name="currencies_array">
+        <item>Euro (€)</item>
+        <item>Dollar ($)</item>
+        <item>Yen</item>
+        <item>Bitcoin</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>

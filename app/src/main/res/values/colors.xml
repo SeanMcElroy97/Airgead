@@ -9,7 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="green_neon">#58f474</color>
     <color name="green_dark">#47c45d</color>
-    <color name="grey_dark_theme">#121212</color>
-    <color name="dark_theme_06dp">#2c2c2c</color>
+    <color name="darker_than_dark">#121212</color>
+    <color name="dark_theme_01dp">#1d1d1d</color>
+    <color name="dark_theme_12dp">#323232</color>
     <color name="black_navegation_bar">#2d2d2d</color>
 </resources>

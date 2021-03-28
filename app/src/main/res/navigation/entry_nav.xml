@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entry_nav"
+    app:startDestination="@id/currencyPickerFragment">
+
+    <fragment
+        android:id="@+id/currencyPickerFragment"
+        android:name="com.example.airgead.CurrencyPickerFragment"
+        android:label="fragment_currency_picker"
+        tools:layout="@layout/fragment_currency_picker" />
+</navigation>
