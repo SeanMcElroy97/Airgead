@@ -11,6 +11,14 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/black</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">
+            @drawable/splash_screen
+        </item>
+        <item name="colorPrimaryDark">@color/green_dark</item>
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@color/grey_dark_theme</item>
     </style>
 </resources>
