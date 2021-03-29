@@ -7,11 +7,10 @@
     <string-array name="currencies_array">
         <item>Euro (€)</item>
         <item>Dollar ($)</item>
-        <item>Yen</item>
-        <item>Bitcoin</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>British Pound (£)</item>
+        <item>Bitcoin (₿)</item>
+        <item>Canadian (Can$)</item>
+        <item>Rupee (₹)</item>
+        <item>Australian dollar (A$)</item>
     </string-array>
 </resources>
