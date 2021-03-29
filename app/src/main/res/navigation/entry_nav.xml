@@ -9,5 +9,16 @@
         android:id="@+id/currencyPickerFragment"
         android:name="com.example.airgead.CurrencyPickerFragment"
         android:label="fragment_currency_picker"
-        tools:layout="@layout/fragment_currency_picker" />
+        tools:layout="@layout/fragment_currency_picker" >
+        <action
+            android:id="@+id/action_currencyPickerFragment_to_enterBalanceFragment"
+            app:destination="@id/enterBalanceFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_close_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterBalanceFragment"
+        android:name="com.example.airgead.EnterBalanceFragment"
+        android:label="fragment_enter_balance"
+        tools:layout="@layout/fragment_enter_balance" />
 </navigation>

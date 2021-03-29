@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatDelegate;
 public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         super.onCreate(savedInstanceState);
         Intent intent = new Intent(this, MainActivity.class);
         new Handler().postDelayed(new Runnable() {

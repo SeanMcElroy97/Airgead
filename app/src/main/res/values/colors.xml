@@ -12,5 +12,6 @@
     <color name="darker_than_dark">#121212</color>
     <color name="dark_theme_01dp">#1d1d1d</color>
     <color name="dark_theme_12dp">#323232</color>
+    <color name="dark_theme_24dp">#373737</color>
     <color name="black_navegation_bar">#2d2d2d</color>
 </resources>

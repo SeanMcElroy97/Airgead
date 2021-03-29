@@ -10,10 +10,10 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/enter_balance_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/choose_currency_string"
+        android:text="@string/enter_current_balance"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,11 +23,11 @@
         app:layout_constraintVertical_bias="0.123" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menu"
-        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:id="@+id/balanceInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Currency"
+        android:hint="Balance"
         app:boxBackgroundColor="@color/dark_theme_24dp"
         android:textColorHint="@color/green_neon"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -36,29 +36,25 @@
         app:endIconTint="@color/green_neon"
         tools:layout_editor_absoluteX="0dp">
 
-        <AutoCompleteTextView
-            android:id="@+id/AutoCompTxtView"
-            android:textColor="@color/white"
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            android:background="@color/dark_theme_24dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="281dp" />
+            android:inputType="numberDecimal"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/currencyNextButton"
+        android:id="@+id/beginBTN"
         android:layout_width="134dp"
         android:layout_height="64dp"
-        android:text="Next"
+        android:text="Begin"
         app:backgroundTint="#373737"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu" />
+        app:layout_constraintTop_toBottomOf="@+id/balanceInput" />
+<!--        app:layout_constraintTop_toBottomOf="@+id/balanceInput" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
