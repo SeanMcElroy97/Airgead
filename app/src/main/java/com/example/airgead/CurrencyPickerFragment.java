@@ -43,6 +43,16 @@ public class CurrencyPickerFragment extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        View view = getView();
+        List<String> currenciesAvailable = Arrays.asList(getResources().getStringArray(R.array.currencies_array));
+        ArrayAdapter adapter = new ArrayAdapter(getContext(), R.layout.dropdown_currency_item, currenciesAvailable);
+        AutoCompleteTextView autoComplete = view.findViewById(R.id.AutoCompTxtView);
+        autoComplete.setAdapter(adapter);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_currency_picker, container, false);
