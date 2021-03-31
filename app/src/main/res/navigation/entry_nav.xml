@@ -20,5 +20,9 @@
         android:id="@+id/enterBalanceFragment"
         android:name="com.example.airgead.EnterBalanceFragment"
         android:label="fragment_enter_balance"
-        tools:layout="@layout/fragment_enter_balance" />
+        tools:layout="@layout/fragment_enter_balance" >
+        <argument
+            android:name="currency"
+            app:argType="string" />
+    </fragment>
 </navigation>

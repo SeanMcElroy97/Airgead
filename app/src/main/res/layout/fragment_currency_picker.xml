@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CurrencyPickerFragment"
-    android:background="@color/dark_theme_01dp">
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -13,6 +13,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
         android:text="@string/choose_currency_string"
         android:textColor="#FFFFFF"
         android:textSize="30sp"
@@ -23,7 +24,7 @@
         app:layout_constraintVertical_bias="0.123" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/menu"
+        android:id="@+id/currencyTIL"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,7 +35,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".3"
         app:endIconTint="@color/green_neon"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        app:errorEnabled="true">
 
         <AutoCompleteTextView
             android:id="@+id/AutoCompTxtView"
@@ -54,11 +56,11 @@
         android:layout_width="134dp"
         android:layout_height="64dp"
         android:text="Next"
-        app:backgroundTint="#373737"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu" />
+        app:layout_constraintTop_toBottomOf="@+id/currencyTIL" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
